@@ -1,4 +1,4 @@
-package com.automation.maven.com.automation.maven;
+package com.automation.maven;
 
 /**
  * Hello world!
