@@ -1,4 +1,4 @@
-package com.automation.maven.com.automation.maven;
+package com.automation.maven.test;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
