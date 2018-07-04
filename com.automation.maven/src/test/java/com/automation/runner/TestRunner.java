@@ -9,11 +9,11 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 	features={"feature"},
 	glue={"com.automation.steps"},
-	tags={"@test1"},
+	tags={"@POC1"},
 	//format={"pretty","html:target/Report"},
 	monochrome=true,
-	dryRun = false,
-	plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"}
+	dryRun = false
+	//plugin = {"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"}
 )
 public class TestRunner {
 
