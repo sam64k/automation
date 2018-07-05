@@ -6,8 +6,9 @@ import cucumber.api.java.en.Then;
 public class Stepdefination {
 	
 	@Given("^User launches Browser \"([^\"]*)\"$")
-	public void user_launches_Browser(String arg1) throws Throwable {
+	public void user_launches_Browser(String browserName) throws Throwable {
 		System.out.println("Launch Browser");
+		
 	}
 
 	@Then("^user loads datasheet \"([^\"]*)\"$")
