@@ -1,10 +1,16 @@
-package com.automation.steps.browser;
+package com.automation.steps.browsersession;
+
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class FirefoxSession extends Browser {
 
 	@Override
 	public void launchbrowser() {
-		// TODO launch firefox
+		System.out.println("******Launching FF browser*******");
+		System.setProperty("webdriver.firefox.marionette", "/com.automation.maven/resources/driver/geckodriver.exe");
+		session = new FirefoxDriver();
+		session.manage().deleteAllCookies();
+		session.manage().window().maximize();
 		
 	}
 
