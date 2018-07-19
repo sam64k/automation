@@ -1,6 +1,7 @@
 package com.automation.steps;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 
 import com.automation.steps.browsersession.Browser;
 import com.automation.steps.browsersession.BrowserType;
@@ -10,6 +11,7 @@ import com.automation.steps.browsersession.IESession;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import objectProperties.ObjectProperties;
 
 public class Stepdefination {
 	Browser browser;
@@ -49,7 +51,16 @@ public class Stepdefination {
 	@Then("^user enter text in textbox \"([^\"]*)\"$")
 	public void user_enter_textin_textbox(String arg1) throws Throwable {
 	    System.out.println("enters text");
-	    browser.session.findElement(By.xpath("xpath"));
+	    ObjectProperties.Uname.getProperty();
+	    StringBuilder querystr = new StringBuilder();
+	    querystr.append("test string");
+	    
+	    //JavascriptExecutor js = ((JavascriptExecutor)) Browser.session;
+	    //js.executeScript(arg1);
+	    //js.
+	    //browser.session.getobject(ObjectProperties.Uname.getProperty()).sendKeys();
+	    
+	    
 	}
 
 	@Then("^user clicks on button \"([^\"]*)\"$")
