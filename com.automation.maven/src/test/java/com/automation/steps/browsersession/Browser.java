@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import cucumber.api.java.After;
+
 public abstract class Browser {
 	public static WebDriver session;
 	final int IMPLICIT_WAIT=60;
@@ -21,6 +23,7 @@ public abstract class Browser {
 		session.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS);
 		session.get(url);
 	}
+	
 	public void closeBrowserSession(){
 		if(session != null)
 		{
