@@ -13,6 +13,7 @@ public class Igr {
 		session.findElement(By.id("txtCaptcha"));
 		System.out.println("Push to master123");
 		System.out.println("fetch=>pull");
+		System.out.println("new fetch again")
 	}
 
 }
