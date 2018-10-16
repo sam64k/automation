@@ -12,6 +12,7 @@ public class Igr {
 		session = new FirefoxDriver();
 		session.findElement(By.id("txtCaptcha"));
 		System.out.println("Push to master123");
+		System.out.println("fetch=>pull");
 	}
 
 }
